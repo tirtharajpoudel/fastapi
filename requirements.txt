@@ -2,7 +2,6 @@ alembic==1.7.5
 anyio==3.4.0
 appdirs==1.4.4
 asgiref==3.4.1
-attrs @ file:///tmp/build/80754af9/attrs_1620827162558/work
 bcrypt==3.2.0
 black==19.10b0
 certifi==2021.10.8
@@ -35,15 +34,12 @@ python-dotenv==0.19.2
 python-jose==3.3.0
 python-multipart==0.0.5
 PyYAML==5.4.1
-regex @ file:///C:/ci/regex_1628063427816/work
 requests==2.26.0
 rsa==4.8
 six==1.16.0
 sniffio==1.2.0
 SQLAlchemy==1.4.27
 starlette==0.16.0
-toml @ file:///tmp/build/80754af9/toml_1616166611790/work
-typed-ast @ file:///C:/ci/typed-ast_1624953797214/work
 typing_extensions==4.0.1
 ujson==4.3.0
 urllib3==1.26.7
