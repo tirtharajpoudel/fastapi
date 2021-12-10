@@ -10,7 +10,7 @@ router = APIRouter(prefix="/posts", tags=["Posts"])
 
 
 # @router.get("/", response_model=List[schemas.Post])
-@router.get("/", response_model=List[schemas.PostOut])
+@router.get("", response_model=List[schemas.PostOut])
 def gets_posts(
     db: Session = Depends(get_db),
     current_user: int = Depends(oauth2.get_current_user),
@@ -43,7 +43,7 @@ def gets_posts(
     return results
 
 
-@router.post("/", status_code=status.HTTP_201_CREATED, response_model=schemas.Post)
+@router.post("", status_code=status.HTTP_201_CREATED, response_model=schemas.Post)
 def create_post(
     post: schemas.PostCreate,
     db: Session = Depends(get_db),
